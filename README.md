@@ -29,3 +29,16 @@ articles('azerishere', function (error, azer) {
 
 })
 ```
+
+Passing hash function:
+
+```js
+articles = memoize(pullMediumArticles, {
+  time: '12 hours',
+  hash: hash
+})
+
+function hash (title) {
+  return 'post:' + title;
+}
+```
