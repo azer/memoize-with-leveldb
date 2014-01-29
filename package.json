@@ -1,6 +1,6 @@
 {
   "name": "memoize-with-leveldb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Memoize functions with LevelDB",
   "main": "index.js",
   "scripts": {
