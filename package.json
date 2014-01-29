@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "level-json-cache": "*",
-    "memoize-async": "~1.0.0",
-    "debug": "~0.7.4"
+    "debug": "~0.7.4",
+    "memoize-async": "~1.0.1"
   },
   "devDependencies": {
     "prova": "*"
