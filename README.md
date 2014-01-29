@@ -12,11 +12,11 @@ $ npm install memoize-with-leveldb
 
 ```js
 memoize = require('memoize-with-leveldb')('./path-to-db')
-pullMediumArticles = require('medium-author')
-articles = memoize(pullMediumArticles, '12 hours') // see github.com/azer/english-time for valid time inputs
+pullAuthor = require('medium-author')
+author = memoize(pullAuthor, '12 hours') // see github.com/azer/english-time for valid time inputs
 
 // Pulls at first call:
-articles('azerishere', function (error, azer) {
+author('azerishere', function (error, azer) {
 
   azer.name
   // => Azer Koçulu
@@ -33,7 +33,7 @@ articles('azerishere', function (error, azer) {
 Passing hash function:
 
 ```js
-articles = memoize(pullMediumArticles, {
+articles = memoize(pullAuthor, {
   time: '12 hours',
   hash: hash
 })
