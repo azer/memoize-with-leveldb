@@ -1,6 +1,6 @@
 ## memoize-with-leveldb
 
-Memoize functions with [memoize-async](http://github.com/azer/memoize-async) and [level-json-cache](http://github.com/azer/level-json-cache).
+Memoize async functions with [memoize-async](http://github.com/azer/memoize-async) and [level-json-cache](http://github.com/azer/level-json-cache).
 
 ## Install
 
@@ -11,7 +11,7 @@ $ npm install memoize-with-leveldb
 ## Usage
 
 ```js
-memoize = require('memoize-with-leveldb')
+memoize = require('memoize-with-leveldb')('./path-to-db')
 pullMediumArticles = require('medium-author')
 articles = memoize(pullMediumArticles, '12 hours') // see github.com/azer/english-time for valid time inputs
 
